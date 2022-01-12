@@ -48,7 +48,7 @@ def center_crop(img, new_width=None, new_height=None):
 
 
 
-def image_downsample(img,scale_fac):
+def image_downsample(img,scale_fac):                                   #img-----> HxWxC
     x = downscale_local_mean(img[:,:,0], (scale_fac,scale_fac))
     y = downscale_local_mean(img[:,:,1], (scale_fac,scale_fac))
     z = downscale_local_mean(img[:,:,2], (scale_fac,scale_fac))  
